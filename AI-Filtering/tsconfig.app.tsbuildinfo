@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/reportgenerator.ts","./src/components/channeltabs.tsx","./src/components/datatable.tsx","./src/components/filterbar.tsx","./src/components/groupedmultiselect.tsx","./src/components/reportgenerator.tsx","./src/components/reviewchanges.tsx","./src/components/sidebar.tsx","./src/components/toast.tsx"],"version":"5.9.3"}
