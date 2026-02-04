@@ -62,7 +62,7 @@ export function ReviewChanges({ changes, isLoading = false, onUndo, onReset }: R
 
     // Display metrics as a vertical list
     return (
-      <div className="flex flex-col gap-4 flex-1 overflow-y-auto min-h-0" style={{ width: '228px' }}>
+      <div className="flex flex-col gap-4 flex-1 overflow-y-auto min-h-0 w-full">
         {metricNames.map((name, index) => (
           <div key={index} className="text-xs text-[#99A1AF] leading-4" style={{ height: '16px' }}>
             {name}
@@ -131,21 +131,21 @@ export function ReviewChanges({ changes, isLoading = false, onUndo, onReset }: R
     >
       <div className="p-6 flex flex-col h-full min-h-0 gap-4">
         {/* Review Header - order 0 */}
-        <div className="flex items-center shrink-0" style={{ width: '252px', height: '20px' }}>
+        <div className="flex items-center shrink-0 w-full" style={{ height: '20px' }}>
           <Text weight="medium" size="sm" className="text-[#030712]">Review changes</Text>
         </div>
 
         {/* Container with gap 8px - order 1, flex-grow: 1 */}
-        <div className="flex flex-col gap-2 flex-1 min-h-0" style={{ width: '252px' }}>
+        <div className="flex flex-col gap-2 flex-1 min-h-0 w-full">
           {/* Summary text - order 0 */}
           {!isLoading && summaryText && (
-            <div className="text-sm text-[#6A7282] leading-5 shrink-0 flex items-center" style={{ width: '252px', height: '40px' }}>
+            <div className="text-sm text-[#6A7282] leading-5 shrink-0 flex items-center w-full" style={{ height: '40px' }}>
               {summaryText}
             </div>
           )}
 
           {/* Review changes box - order 1, flex-grow: 1 */}
-          <div className="bg-white border border-[#F3F4F6] rounded-lg p-3 flex-1 flex flex-col min-h-0" style={{ width: '252px' }}>
+          <div className="bg-white border border-[#F3F4F6] rounded-lg p-3 flex-1 flex flex-col min-h-0 w-full">
             <TabsRoot defaultValue="metrics" className="flex-1 flex flex-col">
               <TabsList variant="pill" size="sm" className="mb-3 justify-start shrink-0">
                 <TabsTrigger value="metrics">Metrics</TabsTrigger>
@@ -168,7 +168,7 @@ export function ReviewChanges({ changes, isLoading = false, onUndo, onReset }: R
 
         {/* Bottom buttons - Reset (left), Undo and Keep (right) - order 2 */}
         {!isLoading && changes.length > 0 && (
-          <div className="flex justify-between items-center gap-1.5 shrink-0" style={{ width: '252px', height: '28px' }}>
+          <div className="flex justify-between items-center gap-1.5 shrink-0 w-full" style={{ height: '28px' }}>
             {/* Reset button - left aligned */}
             <button 
               onClick={onReset}

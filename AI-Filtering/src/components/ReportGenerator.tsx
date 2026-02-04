@@ -64,7 +64,7 @@ export function ReportGenerator({ onGenerate, isGenerating }: ReportGeneratorPro
 
   return (
     <div
-      className="flex flex-col items-start p-6 w-[300px] bg-white border border-[#F3F4F6] rounded-tr-[6px]"
+      className="flex flex-col items-start p-6 w-full bg-white border border-[#F3F4F6] rounded-tr-[6px]"
       style={{ marginTop: '-1px' }}
     >
       {/* Sidebar Header */}
@@ -126,11 +126,11 @@ export function ReportGenerator({ onGenerate, isGenerating }: ReportGeneratorPro
           </div>
 
           {/* Search Container */}
-          <div className="flex flex-col justify-end items-start">
-          {/* Search Box - 252px width, auto height, padding 16px 16px 12px */}
+          <div className="flex flex-col justify-end items-start w-full">
+          {/* Search Box - full width, auto height, padding 16px 16px 12px */}
           <div
-            className="flex flex-col items-start gap-4 bg-white border border-[#DAE9FF] rounded-lg shadow-[0px_0px_24px_8px_rgba(238,246,255,0.5)]"
-            style={{ width: '252px', padding: '16px 16px 12px' }}
+            className="flex flex-col items-start gap-4 bg-white border border-[#DAE9FF] rounded-lg shadow-[0px_0px_24px_8px_rgba(238,246,255,0.5)] w-full"
+            style={{ padding: '16px 16px 12px' }}
           >
               {/* Input text */}
               <textarea

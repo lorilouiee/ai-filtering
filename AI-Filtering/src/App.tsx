@@ -242,12 +242,12 @@ function App() {
                 flex flex-col border-l border-[#F3F4F6] 
                 transition-all duration-300 ease-in-out
                 ${isReportGeneratorOpen 
-                  ? 'w-[300px] opacity-100' 
+                  ? 'w-1/4 opacity-100' 
                   : 'w-0 opacity-0 overflow-hidden'
                 }
               `}
             >
-              <div className="w-[300px] flex flex-col h-full">
+              <div className="w-full flex flex-col h-full">
                 <ReportGenerator 
                   onGenerate={handleGenerate} 
                   isGenerating={isGenerating}
